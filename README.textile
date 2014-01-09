@@ -1,0 +1,30 @@
+h1. sinaWeiboShare
+
+一个分享到新浪微博的js组件，可以自动适配桌面版或移动版，打开不同的微博分享链接。
+
+适用于IE6+ 及各种其它PC浏览器和移动浏览器
+
+判断是否为移动设备，参考的 "pinceladasdaweb / isMobile":https://github.com/pinceladasdaweb/isMobile 。
+
+h1. 使用方法
+
+h2. 引入页面后，调用sinaWeiboShare函数即可。
+
+miniDialog基于jQuery或Zepto，将这些js引入你的页面，建议置于 @body@ 结束标签之前
+
+<pre>
+sinaWeiboShare(options)
+</pre>
+
+h3. options字段
+
+下面是options的全部字段：
+
+* @title@ String 分享内容，无需encodeURI
+* @url@ String 分享链接，无需encodeURI
+* @pic@ String 分享图片的url，无需encodeURI。新浪的接口多张图片尚未完全开放，暂时只能分享一张
+* @ralateUid@ String 或 Number 相关微博Uid，如果有此项，分享内容会自动 @相关微博
+
+h1. License
+
+所有代码基于 "MIT License":http://www.opensource.org/licenses/mit-license.php. 即你可以随意使用和更改，但请保留原作者名和项目链接。

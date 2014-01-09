@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<title>sinaWeiboShare demo</title>
+</head>
+<body>
+	<button id="shareBtn">调用web接口分享到新浪微博</button>
+	<script src="http://webmap2.map.bdimg.com/yyfm/jQuery_1.x/1.10.2/js/jQuery_1.x.min.js"></script>
+	<script src="http://bcs.duapp.com/jieyou-storage/consoleEnable.js"></script>
+	<script src="sinaWeiboShare.js"></script>
+	<script>
+		$(function(){
+			$('#shareBtn').on('click',function(){
+				sinaWeiboShare({
+					'title':'百度首页标题',
+					'text':'百度首页内容',
+					'url':'http://www.baidu.com/',
+					'height':200
+				})
+				// sinaWeiboShare( )
+			})
+		})
+	</script>
+</body>
+</html> 
