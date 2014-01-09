@@ -10,8 +10,6 @@ h1. 使用方法
 
 h2. 引入页面后，调用sinaWeiboShare函数即可。
 
-miniDialog基于jQuery或Zepto，将这些js引入你的页面，建议置于 @body@ 结束标签之前
-
 <pre>
 sinaWeiboShare(options)
 </pre>
