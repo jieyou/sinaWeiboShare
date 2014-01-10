@@ -25,7 +25,11 @@
 				}
 			}
 		}
-		window.open(sinaUrlPrefix+urlArray.join('&'))
+		try{
+			window.open(sinaUrlPrefix+urlArray.join('&'))
+		}catch(e){
+			
+		}
 	}
 
 	window.sinaWeiboShare = sinaWeiboShare
