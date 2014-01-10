@@ -14,14 +14,19 @@ h2. 引入页面后，调用sinaWeiboShare函数即可。
 sinaWeiboShare(options)
 </pre>
 
-h3. options字段
+h2. options字段
 
 下面是options的全部字段：
 
-* @title@ String 分享内容，无需encodeURI
+* @title@ 或 @text@ String 分享内容，无需encodeURI
 * @url@ String 分享链接，无需encodeURI
 * @pic@ String 分享图片的url，无需encodeURI。新浪的接口多张图片尚未完全开放，暂时只能分享一张
 * @ralateUid@ String 或 Number 相关微博Uid，如果有此项，分享内容会自动 @相关微博
+
+h1. change log
+
+* 1.1.0
+	原本用title字段表示被分享的内容，现在也可以用text字段来表示
 
 h1. License
 
