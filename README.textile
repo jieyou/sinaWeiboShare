@@ -8,22 +8,28 @@ h1. sinaWeiboShare
 
 h1. 使用方法
 
-h2. 引入页面后，调用sinaWeiboShare函数即可。
+h2. 引入页面后，如下所示调用对应函数即可。
 
 <pre>
-sinaWeiboShare(options)
+sinaWeiboShare.action(optionsOrUrl) // 直接打开分享到微博的页面，参数形式为Object或String。为Object时，具体字段见下“options字段”；为String时，即直接将 @.getUrl@ 方法获得的url传递进来。这个方法使用的是 @window.open@ 方式打开微博分享页面
+sinaWeiboShare.getUrl(options) // 将指定的options生成对应微博分享的页面链接，获取这个链接后，可以自行通过 @<a href=""></a>@ @window.open@ 或 @location.href = @ 等或调用 @.action@ 方法打开微博分享页面
 </pre>
 
 h2. options字段
 
 下面是options的全部字段：
 
-* @title@ 或 @text@ String 分享内容，无需encodeURI
-* @url@ String 分享链接，无需encodeURI
-* @pic@ String 分享图片的url，无需encodeURI。新浪的接口多张图片尚未完全开放，暂时只能分享一张
-* @ralateUid@ String 或 Number 相关微博Uid，如果有此项，分享内容会自动 @相关微博
+* title或text String 分享内容，无需encodeURI
+* url String 分享链接，无需encodeURI
+* pic String 分享图片的url，无需encodeURI。新浪的接口多张图片尚未完全开放，暂时只能分享一张
+* ralateUid String 或 Number 相关微博Uid，如果有此项，分享内容会自动 @相关微博
+* appkey String 或 Number 分享来源的appkey，如果有此项，会在微博正文地下，显示“来自XXX”
 
 h1. change log
+
+* 1.2.0
+	现在拆分出 @.getUrl@ 和 @.action@ 方法。
+	加入appkey参数
 
 * 1.1.0
 	原本用title字段表示被分享的内容，现在也可以用text字段来表示
