@@ -16,6 +16,7 @@ h2. 引入页面后，如下所示调用对应函数即可。
 将指定的 @options@ 生成对应微博分享的页面链接，获取这个链接后，可以自行通过 @a标签@ @window.open@ 或 @location.href = ''@ 等或调用 @.action@ 方法打开微博分享页面：
 <pre>sinaWeiboShare.getUrl(options)</pre>
 
+也可以查看 "https://github.com/jieyou/sinaWeiboShare/blob/master/demo.html":示例页面。
 
 h2. options字段
 
