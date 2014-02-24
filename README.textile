@@ -10,14 +10,16 @@ h1. 使用方法
 
 h2. 引入页面后，如下所示调用对应函数即可。
 
-<pre>
-sinaWeiboShare.action(optionsOrUrl) // 直接打开分享到微博的页面，参数形式为Object或String。为Object时，具体字段见下“options字段”；为String时，即直接将 .getUrl 方法获得的url传递进来。这个方法使用的是 window.open 方式打开微博分享页面
-sinaWeiboShare.getUrl(options) // 将指定的options生成对应微博分享的页面链接，获取这个链接后，可以自行通过 a标签 window.open 或 location.href = '' 等或调用 .action 方法打开微博分享页面
-</pre>
+直接打开分享到微博的页面，参数形式为 @Object@ 或 @String@ 。为 @Object@ 时，具体字段见下“options字段”；为 @String@ 时，即将 @.getUrl@ 方法获得的url传递进来。这个方法使用的是 @window.open@ 的方式打开微博分享页面：
+<pre>sinaWeiboShare.action(optionsOrUrl)</pre>
+
+将指定的 @options@ 生成对应微博分享的页面链接，获取这个链接后，可以自行通过 @a标签@ @window.open@ 或 @location.href = ''@ 等或调用 @.action@ 方法打开微博分享页面：
+<pre>sinaWeiboShare.getUrl(options)</pre>
+
 
 h2. options字段
 
-下面是options的全部字段：
+下面是 @options@ 的全部字段：
 
 * title或text String 分享内容，无需encodeURI
 * url String 分享链接，无需encodeURI
