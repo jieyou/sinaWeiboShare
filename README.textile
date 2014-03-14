@@ -6,6 +6,11 @@ h1. sinaWeiboShare
 
 判断是否为移动设备，参考的 "pinceladasdaweb / isMobile":https://github.com/pinceladasdaweb/isMobile 。
 
+h1. 当前用户
+* "百度地图":http://map.baidu.com/
+* "百度团购":http://tuan.baidu.com/
+* +You
+
 h1. 使用方法
 
 h2. 引入页面后，如下所示调用对应函数即可。
