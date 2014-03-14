@@ -1,5 +1,8 @@
-/*! see https://github.com/jieyou/sinaWeiboShare
-*/
+/*!
+ * author:jieyou
+ * contacts:百度hi->youyo1122
+ * see https://github.com/jieyou/sinaWeiboShare
+ */
 ;(function(window){
 	var sinaUrlPrefix = 'http://service.weibo.com/share/'+(/android|webos|ip(hone|ad|od)|opera (mini|mobi|tablet)|iemobile|windows.+(phone|touch)|mobile|fennec|kindle (Fire)|Silk|maemo|blackberry|playbook|bb10\; (touch|kbd)|Symbian(OS)|Ubuntu Touch/i.test(navigator.userAgent)?'mobile':'share')+'.php?' // see https://github.com/pinceladasdaweb/isMobile/blob/master/ismobile.js
 	
