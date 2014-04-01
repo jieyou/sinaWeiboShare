@@ -27,11 +27,11 @@ h2. options字段
 
 下面是 @options@ 的全部字段：
 
-* title或text String 分享内容，无需encodeURI
-* url String 分享链接，无需encodeURI
-* pic String 分享图片的url，无需encodeURI。新浪的接口多张图片尚未完全开放，暂时只能分享一张
-* ralateUid String 或 Number 相关微博Uid，如果有此项，分享内容会自动 @相关微博
-* appkey String 或 Number 分享来源的appkey，如果有此项，会在微博正文地下，显示“来自XXX”
+* title或text [类型String] 分享内容，无需encodeURI
+* url [类型String] 分享链接，无需encodeURI
+* pic [类型String] 分享图片的url，无需encodeURI。新浪的接口多张图片尚未完全开放，暂时只能分享一张
+* ralateUid [类型String 或 Number] 相关微博Uid，如果有此项，分享内容会自动 @相关微博
+* appkey [类型String 或 Number] 分享来源的appkey，如果有此项，会在微博正文地下，显示“来自XXX”
 
 h1. change log
 
